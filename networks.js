@@ -8,18 +8,18 @@ exports.livenet = {
   name: 'livenet',
   magic: hex('c0c0c0c0'),
   addressVersion: 0x2F,
-  privKeyVersion: 128,
-  P2SHVersion: 22,
+  privKeyVersion: 176,
+  P2SHVersion: 5,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
     hash: hex('3864908c81344692075f051b011c762e195ccdb1003673ffbf5132b53058feed'),
     merkle_root: hex('165a1f0aa819fa4612ff950e1f062a1ad7371d83bf66b334c2d706867a5ca8d2'),
     height: 0,
-    nonce: 2083236893,
+    nonce: 2151022,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1231006505,
+    timestamp: 1388528588,
     bits: 486604799,
   },
   dnsSeeds: [
@@ -49,8 +49,6 @@ exports.testnet = {
     bits: 486604799,
   },
   dnsSeeds: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me'
   ],
-  defaultClientPort: 18333
+  defaultClientPort: 1111
 };
